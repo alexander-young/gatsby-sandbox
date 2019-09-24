@@ -14,7 +14,7 @@ module.exports = {
       options: {
         typeName: "WordPress",
         fieldName: "wordPress",
-        url: "http://wpgraphql.local/graphql",
+        url: "http://157.245.183.65/graphql",
         refetchInterval: 60
       },
     },
