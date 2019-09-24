@@ -1,5 +1,6 @@
 module.exports = {
   pathPrefix: "/gatsby-sandbox",
+  assetPrefix: "/gatsby-sandbox",
   siteMetadata: {
     title: `Gatsby Default Starter`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
@@ -24,7 +25,7 @@ module.exports = {
       options: {
         name: `gatsby-starter-default`,
         short_name: `starter`,
-        start_url: `/`,
+        start_url: `/gatsby-sandbox`,
         background_color: `#663399`,
         theme_color: `#663399`,
         display: `minimal-ui`,
