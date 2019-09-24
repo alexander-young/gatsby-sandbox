@@ -6,11 +6,14 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    `gatsby-plugin-sass`,
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: "gatsby-source-graphql",
       options: {
-        name: `images`,
-        path: `${__dirname}/src/images`,
+        typeName: "WordPress",
+        fieldName: "wordPress",
+        url: "http://wpgraphql.local/graphql",
+        refetchInterval: 60
       },
     },
     `gatsby-transformer-sharp`,

@@ -1,0 +1,18 @@
+@import '../../../node_modules/bootstrap/scss/bootstrap.scss';
+
+.container {
+  width: 800px;
+  padding: 25px 0;
+}
+
+.row {
+  @include make-row();
+}
+
+.col {
+  @include make-col-ready();
+}
+
+.col-50 {
+  @include make-col(6);
+}
