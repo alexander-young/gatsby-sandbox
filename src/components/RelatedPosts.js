@@ -30,7 +30,6 @@ export default () => (
                 return (
                   <div className="col-sm" key={node.uri}>
                     <div className="card">
-                      <img src={node.featuredImage.sourceUrl} srcSet={node.featuredImage.srcSet} alt="" className="card-img-top" />
                       <div className="card-body">
                         <h5 className="card-title">{node.title}</h5>
                         <div className="card-text" dangerouslySetInnerHTML={{ __html: node.excerpt }} />
